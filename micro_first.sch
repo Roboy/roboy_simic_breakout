@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+LIBS:micro_first-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:Simic_Infineon U1
+U 1 1 5B0DA978
+P 5750 3650
+F 0 "U1" H 5750 4125 50  0000 C CNN
+F 1 "Simic_Infineon" H 5750 4034 50  0000 C CNN
+F 2 "custom_lib:IM69D130_Simic_uPhone" H 5750 3650 50  0001 C CNN
+F 3 "" H 5750 3650 50  0001 C CNN
+	1    5750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5B0DA9FC
+P 7450 3550
+F 0 "J1" H 7530 3542 50  0000 L CNN
+F 1 "Conn_01x04" H 7530 3451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7450 3550 50  0001 C CNN
+F 3 "~" H 7450 3550 50  0001 C CNN
+	1    7450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B0DAADA
+P 4900 3650
+F 0 "C1" H 5015 3696 50  0000 L CNN
+F 1 "100n" H 5015 3605 50  0000 L CNN
+F 2 "custom_lib:The_0402_FP" H 4938 3500 50  0001 C CNN
+F 3 "~" H 4900 3650 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5B0DAB3E
+P 5550 4500
+F 0 "#PWR02" H 5550 4250 50  0001 C CNN
+F 1 "GND" H 5555 4327 50  0000 C CNN
+F 2 "" H 5550 4500 50  0001 C CNN
+F 3 "" H 5550 4500 50  0001 C CNN
+	1    5550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5B0DABDC
+P 4200 3050
+F 0 "#PWR01" H 4200 2900 50  0001 C CNN
+F 1 "+3.3V" H 4215 3223 50  0000 C CNN
+F 2 "" H 4200 3050 50  0001 C CNN
+F 3 "" H 4200 3050 50  0001 C CNN
+	1    4200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5B0DAC15
+P 6800 1900
+F 0 "#PWR03" H 6800 1750 50  0001 C CNN
+F 1 "+3.3V" H 6815 2073 50  0000 C CNN
+F 2 "" H 6800 1900 50  0001 C CNN
+F 3 "" H 6800 1900 50  0001 C CNN
+	1    6800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B0DAC53
+P 8200 2200
+F 0 "#PWR04" H 8200 1950 50  0001 C CNN
+F 1 "GND" H 8205 2027 50  0000 C CNN
+F 2 "" H 8200 2200 50  0001 C CNN
+F 3 "" H 8200 2200 50  0001 C CNN
+	1    8200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B0DACAF
+P 7350 1850
+F 0 "#FLG01" H 7350 1925 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 2024 50  0000 C CNN
+F 2 "" H 7350 1850 50  0001 C CNN
+F 3 "~" H 7350 1850 50  0001 C CNN
+	1    7350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5B0DACC7
+P 8200 1850
+F 0 "#FLG02" H 8200 1925 50  0001 C CNN
+F 1 "PWR_FLAG" H 8200 2024 50  0000 C CNN
+F 2 "" H 8200 1850 50  0001 C CNN
+F 3 "~" H 8200 1850 50  0001 C CNN
+	1    8200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1900 6800 2050
+Wire Wire Line
+	6800 2050 7350 2050
+Wire Wire Line
+	7350 2050 7350 1850
+Wire Wire Line
+	8200 1850 8200 2200
+Wire Wire Line
+	4200 3050 4200 3400
+Wire Wire Line
+	4200 3400 4900 3400
+Wire Wire Line
+	4900 3400 4900 3500
+Connection ~ 4900 3400
+Wire Wire Line
+	4900 3400 5300 3400
+Wire Wire Line
+	4900 3800 4900 4250
+Wire Wire Line
+	4900 4250 5300 4250
+Wire Wire Line
+	5550 4250 5550 4150
+Wire Wire Line
+	5550 4500 5550 4250
+Connection ~ 5550 4250
+Wire Wire Line
+	5300 3500 5300 4250
+Connection ~ 5300 4250
+Wire Wire Line
+	5300 4250 5550 4250
+Text Label 7000 3450 0    50   ~ 0
+VDD
+Text Label 7000 3550 0    50   ~ 0
+DATA
+Text Label 7000 3650 0    50   ~ 0
+CLK
+Text Label 7000 3750 0    50   ~ 0
+GND
+Wire Wire Line
+	7000 3450 7250 3450
+Wire Wire Line
+	7000 3550 7250 3550
+Wire Wire Line
+	7000 3650 7250 3650
+Wire Wire Line
+	7000 3750 7250 3750
+Text Label 6400 3400 2    50   ~ 0
+DATA
+Text Label 6400 3500 2    50   ~ 0
+CLK
+Wire Wire Line
+	6200 3400 6400 3400
+Wire Wire Line
+	6200 3500 6400 3500
+Text Label 7350 1950 0    50   ~ 0
+VDD
+Text Label 8200 2050 0    50   ~ 0
+GND
+Text Label 4200 3200 0    50   ~ 0
+VDD
+$EndSCHEMATC
