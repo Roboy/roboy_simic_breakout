@@ -1,0 +1,27 @@
+Cmp-Mod V01 Created by PcbNew   date = 15/06/2018 04:37:49
+
+BeginCmp
+TimeStamp = 5B19DFC0
+Path = /5B0DAADA
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = custom_lib:The_0402_FP;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B19DFD8
+Path = /5B0DA9FC
+Reference = J1;
+ValeurCmp = Conn_01x04;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B19DFF9
+Path = /5B0DA978
+Reference = U1;
+ValeurCmp = Simic_Infineon;
+IdModule  = custom_lib:IM69D130_Simic_uPhone;
+EndCmp
+
+EndListe
